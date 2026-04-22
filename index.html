@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colégio Estadual Idália Rocha — Projeto Integrador 2ª B</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <img src="img/logo sem fundo.png" alt="Logo">
+    <span>Colégio Estadual Idália Rocha</span>
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="#sobre">A Mostra</a></li>
+    <li><a href="#fotos">Fotos</a></li>
+    <li><a href="#videos">Vídeos</a></li>
+    <li><a href="#escola">Nossa Escola</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Colégio Estadual Idália Rocha · 2026</span>
+    <h1>Mostra sobre <span>Mobilidade</span><br>Projeto Integrador <br><span>1º trimestre</span></h1>
+    <p>
+      Um espaço de aprendizado, empatia e transformação social — onde estudantes,
+      professores e a comunidade se unem para pensar a inclusão e a acessibilidade
+      para todos.
+    </p>
+    <a href="#sobre" class="btn-hero">Conheça a Mostra</a>
+  </div>
+</section>
+
+<!-- SOBRE A MOSTRA -->
+<section id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-text">
+        <span class="section-label">O Evento</span>
+        <h2 class="section-title">O que é a Mostra sobre Mobilidade?</h2>
+        <div class="section-divider"></div>
+        <p>
+          A <strong>Mostra sobre Mobilidade</strong> é uma iniciativa do Colégio Idália Rocha que reúne
+          estudantes, professores e membros da comunidade escolar para discutir, vivenciar e propor
+          soluções voltadas à acessibilidade e ao direito de ir e vir de todas as pessoas.
+        </p>
+        <p>
+          Durante o evento, são apresentados projetos interdisciplinares que abordam as realidades de
+          <strong>pessoas cadeirantes</strong>, <strong>deficientes visuais</strong> e pessoas com
+          <strong>dificuldades de locomoção</strong>. Os alunos desenvolvem maquetes, experimentos,
+          protótipos e pesquisas que propõem melhorias concretas para a vida.
+        </p>
+        <p>
+          Além das exposições, a mostra promove simulações de mobilidade reduzida.
+          O objetivo é despertar o olhar crítico e empático nos estudantes, formando cidadãos comprometidos
+          com uma sociedade mais inclusiva.
+        </p>
+      </div>
+      <div class="sobre-highlights">
+        <div class="highlight-card">
+          <div class="highlight-icon">♿</div>
+          <h3>Cadeirantes</h3>
+          <p>Projeto que incorpora sensores e atuadores em cadeiras rodas, cujos objetivos são: evitar a colisão e possíveis batidas.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">👁️</div>
+          <h3>Deficiência Visual</h3>
+          <p>Desenvolvimento de coletes e óculos que possibilitam ao usuário, através de avisos sonoros e sensores de presença, antecipar choques contra superfícies.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon">🦯</div>
+          <h3>Locomoção Reduzida</h3>
+          <p>Desenvolvimento de uma bengala com sensores e atuadores que possibilitam ao usuário, através de avisos sonoros e sensores de presença, antecipar o contato com obstáculos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOTOS -->
+
+<section id="fotos" class="secao-galeria">
+  <h2>Galeria de Fotos</h2>
+  
+  <div class="galeria-grid">
+    <img src="img/elevador.jpg" alt="Projeto do Elevador" class="miniatura" onclick="abrirFoto(this)">
+    <img src="img/elevador 2.jpg" alt="Projeto do Elevador 2" class="miniatura" onclick="abrirFoto(this)">
+    <img src="img/cartaz.jpg" alt="Confecção de Cartazes" class="miniatura" onclick="abrirFoto(this)">
+    <img src="img/carrinho.jpg" alt="Projeto do Carrinho" class="miniatura" onclick="abrirFoto(this)">
+    <img src="img/Robótica (1).jpeg" alt="Projeto do Carrinho 2" class="miniatura" onclick="abrirFoto(this)">
+    <img src="img/Robótica (2).jpeg" alt="Projeto do Carrinho 2" class="miniatura" onclick="abrirFoto(this)">
+    <img src="img/Robótica (3).jpeg" alt="Projeto do Carrinho 2" class="miniatura" onclick="abrirFoto(this)">
+    <img src="img/Robótica (4).jpeg" alt="Projeto do Carrinho 2" class="miniatura" onclick="abrirFoto(this)">
+    <img src="img/Robótica (5).jpeg" alt="Projeto do Carrinho 2" class="miniatura" onclick="abrirFoto(this)">
+    </div>
+</section>
+
+<div id="janela-modal" class="modal">
+  <span class="fechar" onclick="fecharFoto()">&times;</span>
+  <img id="imagem-ampliada" class="modal-conteudo">
+</div>
+
+<!-- VÍDEOS -->
+<section id="videos">
+  <div class="container">
+    <span class="section-label">Vídeos</span>
+    <h2 class="section-title">Assista aos Destaques</h2>
+    <div class="section-divider"></div>
+
+    <div class="videos-grid">
+      <!-- Vídeo 1 -->
+      <div class="video-card">
+        <div class="video-thumb">
+          <video src="videos/VID_20260303_172056.mp4"></video>
+          <div class="play-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span class="video-label">▶ 0:17</span>
+        </div>
+        <div class="video-info">
+          <h3>Corrida de Carrinhos Movidos a Ar (3ª lei de Newton - Acão e Reação)</h3>
+          <p>Projeto desenvolvido pela Profª Judite disciplina de Física e Tecnociência em conjunto com os alunos.</p>
+        </div>
+      </div>
+
+      <!-- Vídeo 2 -->
+      <div class="video-card">
+        <div class="video-thumb video-thumb-2">
+          <div class="play-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span class="video-label">▶ 7:18</span>
+        </div>
+        <div class="video-info">
+          <h3>Experiência: Mobilidade Reduzida</h3>
+          <p>Alunos testam as soluções desenvolvidas na disciplina de Robótica com a mediação do Prof.º Sidiney .</p>
+        </div>
+      </div>
+
+      <!-- Vídeo 3 -->
+      <div class="video-card">
+        <div class="video-thumb video-thumb-3">
+          <div class="play-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span class="video-label">▶ 5:50</span>
+        </div>
+        <div class="video-info">
+          <h3>Projeto Vencedor — Turma do 9º Ano</h3>
+          <p>Conheça o aplicativo criado pelos alunos que mapeia acessibilidade em tempo real na cidade.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE A ESCOLA -->
+<section id="escola">
+  <div class="container">
+    <div class="escola-grid">
+      <div class="escola-img-wrap">
+        <div class="escola-img-main">
+          <img src="img/escola.jpg" alt="Foto fachada da escola">
+        </div>
+        <div class="escola-img-badge">
+          <strong>40</strong>
+          anos de<br>história
+        </div>
+      </div>
+      <div class="escola-text">
+        <span class="section-label">Nossa Escola</span>
+        <h2 class="section-title">Colégio Estadual Idália Rocha</h2>
+        <div class="section-divider"></div>
+        <p>
+          Fundado em 1985, o Colégio Estadual Idália Rocha é uma instituição de ensino comprometida com a formação
+          integral de seus estudantes — intelectual, emocional e cidadã. Acreditamos que a educação
+          transforma vidas e que cada aluno tem o potencial de transformar o mundo ao seu redor.
+        </p>
+        <p>
+          Nossas atividades pedagógicas sempre integram temas relevantes para a sociedade. A Feira de
+          Mobilidade é um dos projetos que melhor expressa nosso compromisso com a inclusão,
+          a empatia e o respeito à diversidade.
+        </p>
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-num">553</div>
+            <div class="stat-lbl">Alunos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">+ 100</div>
+            <div class="stat-lbl">Colaboradores</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">40</div>
+            <div class="stat-lbl">Anos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">12</div>
+            <div class="stat-lbl">Projetos/ano</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container">
+    <div class="contato-grid">
+      <div class="contato-info">
+        <span class="section-label">Fale Conosco</span>
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="section-divider"></div>
+        <p>
+          Tem dúvidas sobre a feira, quer convidar sua turma para uma visita ou deseja ser um parceiro
+          do evento? Estamos à disposição!
+        </p>
+        <div class="contato-items">
+          <div class="contato-item">
+            <div class="contato-icon">📍</div>
+            <div class="contato-item-text">
+              <strong>Endereço</strong>
+              <span>Av. Castelo Branco, 875 — Centro, Ivaiporã / PR</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-icon">📞</div>
+            <div class="contato-item-text">
+              <strong>Telefones</strong>
+              <span>(43) 3472-5251</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-icon">✉️</div>
+            <div class="contato-item-text">
+              <strong>E-mail</strong>
+              <span>ivpidaliarocha@seed.pr.gov.br</span>
+            </div>
+          </div>
+          <div class="contato-item">
+            <div class="contato-icon">🕐</div>
+            <div class="contato-item-text">
+              <strong>Horário</strong>
+              <span>Segunda a Sexta, das 7h às 18h</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contato-form">
+        <div class="form-row">
+          <label>Nome completo</label>
+          <input type="text" placeholder="Seu nome"/>
+        </div>
+        <div class="form-row">
+          <label>E-mail</label>
+          <input type="email" placeholder="seuemail@exemplo.com"/>
+        </div>
+        <div class="form-row">
+          <label>Assunto</label>
+          <input type="text" placeholder="Sobre a feira, parceria, visita..."/>
+        </div>
+        <div class="form-row">
+          <label>Mensagem</label>
+          <textarea placeholder="Escreva sua mensagem..."></textarea>
+        </div>
+        <button class="btn-enviar">Enviar Mensagem</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>Colégio Estadual Idália Rocha</span> — Todos os direitos reservados · Feira de Mobilidade</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
